@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14213d">
+    <title>Ma Semaine avec Dieu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>MA SEMAINE AVEC DIEU</h1>
+    <p>Organise tes journées, grandis dans la foi.</p>
+</header>
+
+<main>
+    <section class="welcome">
+        <h2>Bonjour !</h2>
+        <p>Que cette journée soit conduite par Dieu.</p>
+        <div id="date"></div>
+    </section>
+
+    <section class="card">
+        <h2>📖 Verset du jour</h2>
+        <p>
+            Ta parole est une lampe à mes pieds,
+            et une lumière sur mon sentier.
+        </p>
+        <strong>Psaume 119:105</strong>
+        <textarea id="meditation"
+        placeholder="Que m'enseigne ce verset ?"></textarea>
+        <button onclick="sauverMeditation()">Enregistrer</button>
+    </section>
+
+    <section class="card">
+        <h2>🗓️ Mon programme</h2>
+        <input type="date" id="jour">
+        <input type="text" id="activite"
+        placeholder="Ajouter une activité">
+        <button onclick="ajouterActivite()">Ajouter</button>
+        <ul id="listeActivites"></ul>
+    </section>
+
+    <section class="card">
+        <h2>🙏 Mes habitudes spirituelles</h2>
+        <label><input type="checkbox" class="habitude">
+        Prière personnelle</label>
+        <label><input type="checkbox" class="habitude">
+        Lecture biblique</label>
+        <label><input type="checkbox" class="habitude">
+        Méditation de la Parole</label>
+        <label><input type="checkbox" class="habitude">
+        Louange et adoration</label>
+        <label><input type="checkbox" class="habitude">
+        Action de grâce</label>
+        <p id="progression">Progression : 0%</p>
+    </section>
+
+    <section class="card">
+        <h2>🕊️ Mon carnet de prière</h2>
+        <textarea id="priere"
+        placeholder="Écris tes sujets de prière..."></textarea>
+        <button onclick="sauverPriere()">Enregistrer</button>
+    </section>
+
+    <section class="card">
+        <h2>🎯 Mes objectifs de la semaine</h2>
+        <textarea id="objectifs"
+        placeholder="Quels sont mes objectifs ?"></textarea>
+        <button onclick="sauverObjectifs()">Enregistrer</button>
+    </section>
+
+    <section class="card">
+        <h2>📔 Mon journal spirituel</h2>
+        <textarea id="journal"
+        placeholder="Ce que j'ai appris aujourd'hui..."></textarea>
+        <button onclick="sauverJournal()">Enregistrer</button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 - Ma Semaine avec Dieu</p>
+    <p>Grandir en Christ chaque jour.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
